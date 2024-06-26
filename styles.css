@@ -1,0 +1,101 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+@font-face {
+    font-family: Digital;
+    src: url(./Font/digital-7.ttf);
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.calculator{
+    /* border: 5px solid; */
+    background-color: rgba(5, 4, 4, 0.91);
+    height: auto;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 14px 0px, rgba(255, 255, 255, 0.32) 0px 2px 36px 0px;
+}
+.screen{
+    position: relative;
+    height: 100px;
+    background-color: rgb(24, 23, 23);
+    /* background-color: blue; */
+    margin: 10px 16px;
+    padding: 1px 2%;
+    border-radius: 10px;
+    text-align: right;
+    font-family: 'Digital', Arial;
+}
+.upscreen{
+    height: 20px;
+    /* background-color: beige; */
+}
+.mainscreen{
+    /* background-color: aliceblue; */
+    height: 35px;
+}
+
+.buttons{
+    background-color: rgb(7, 7, 7);
+    position: relative;
+    height: 500px;
+    margin: 10px 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button{
+    border-radius: 50%;
+    margin: 10%;
+    border-style: none;
+    background-color: rgb(24, 23, 23);
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 6px 20px 0px;
+    transition: all 0.15s;
+    color: rgba(255, 255, 255, 0.657);
+    font-size: 24px;
+    padding-top: 10%;
+    text-align: center;
+    cursor: pointer;
+    outline-style: none;
+}
+.small{
+    font-size: 30px;
+}
+
+button:hover{
+    box-shadow: rgba(239, 236, 236, 0.35) 0px 5px 15px;
+    color: white;
+}
+
+.pressed{
+    animation-name: pressing;
+    animation-duration: 0.1s;
+}
+
+.clicked{
+    animation-name: clicking;
+    animation-duration: 0.1s;
+}
+  
+  @keyframes pressing {
+    from {box-shadow: rgba(255, 255, 255, 0.2) 0px 6px 20px 0px;}
+    to {box-shadow: rgba(255, 255, 255, 0.09) 0px 3px 12px;}
+  }
+
+  @keyframes clicking {
+    from {box-shadow: rgba(239, 236, 236, 0.35) 0px 5px 15px;}
+    to {box-shadow: rgba(255, 255, 255, 0.09) 0px 3px 12px;}
+  }
+
+/* @media (max-width:600px) {
+    
+} */
