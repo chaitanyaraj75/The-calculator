@@ -22,6 +22,7 @@ body{
     transform: translate(-50%,-50%);
     border-radius: 30px;
     box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 14px 0px, rgba(255, 255, 255, 0.32) 0px 2px 36px 0px;
+    cursor: default;
 }
 .screen{
     position: relative;
@@ -96,6 +97,71 @@ button:hover{
     to {box-shadow: rgba(255, 255, 255, 0.09) 0px 3px 12px;}
   }
 
-/* @media (max-width:600px) {
+@media (max-width:600px) {
+    .calculator{
+        /* border: 5px solid; */
+        background-color: rgba(5, 4, 4, 0.91);
+        height: auto;
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 30px;
+        box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 14px 0px, rgba(255, 255, 255, 0.32) 0px 2px 36px 0px;
+    }
+    .screen{
+        position: relative;
+        height: 80px;
+        /* background-color: rgb(24, 23, 23); */
+        /* background-color: blue; */
+        margin: 2px 12px;
+        padding: 0px 3%;
+        border-radius: 10px;
+        text-align: right;
+        font-family: 'Digital', Arial;
+        
+    }
+    .upscreen{
+        position: relative;
+        top: 7%;
+        /* font-size: 28px; */
+        /* padding: 1px; */
+        height: 8px;
+        /* background-color: beige; */
+    }
+    .mainscreen{
+        /* background-color: aliceblue; */
+        /* padding-top: 3%; */
+        height: fit-content;
+        font-size: 20px;
+    }
     
-} */
+    .buttons{
+        background-color: rgb(7, 7, 7);
+        position: relative;
+        height: 400px;
+        margin: 10px 5px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    button{
+        border-radius: 50%;
+        margin: 10%;
+        border-style: none;
+        background-color: rgb(24, 23, 23);
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 6px 20px 0px;
+        transition: all 0.15s;
+        color: rgba(255, 255, 255, 0.657);
+        font-size: 20px;
+        padding-top: 10%;
+        text-align: center;
+        cursor: pointer;
+        outline-style: none;
+    }
+    .small{
+        font-size: 24px;
+    }
+}
