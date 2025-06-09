@@ -39,7 +39,7 @@ calculator/
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/chaitanyaraj75/calculator.git
+    git clone https://github.com/chaitanyaraj75/The-calculator.git
     cd calculator
     ```
 2. **Open `index.html` in your browser.**
